@@ -10,5 +10,9 @@
       vars:
         PROJECT: EXE
         ENVIRONMENT: QA
-    
-      msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"  
+      ansible.builtin.debug:
+        msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"  
+
+    - name: print the play variables
+      ansible.builtin.debug:
+        msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"    
