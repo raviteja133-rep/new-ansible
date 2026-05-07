@@ -1,0 +1,16 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:
+    PROJECT: QBE
+  vars_files:
+    - project.yaml
+  vars_prompt:
+    - name: PROJECT
+      prompt: What is your Project?
+      private: false
+
+  tasks:
+    - name: print variables
+      vars:
+        PROJECT: SABRE  
