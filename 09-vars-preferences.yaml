@@ -13,4 +13,6 @@
   tasks:
     - name: print variables
       vars:
-        PROJECT: SABRE  
+        PROJECT: SABRE 
+      ansible.builtin.debug:
+        msg: "Project is {{ PROJECT }}"   
