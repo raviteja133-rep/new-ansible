@@ -9,5 +9,5 @@
       
     - name: start and enable the nginx
       ansible.builtin.debug:
-        state: restart
-        enabled: yes  
+        state: started
+        enable: yes  
