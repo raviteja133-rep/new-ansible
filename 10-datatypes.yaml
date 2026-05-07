@@ -1,0 +1,20 @@
+- name: datatypes
+  hosts: web
+  become: yes
+  vars:
+    COURSE: "Devops with AWS"
+    HOURS: 120
+    LIVE: true
+    DETAILS: 
+      - AWS
+      - Azure
+      - GCP
+    TOOLS:
+      ci: jenkins
+      os: Linux
+      cloud: AWS
+
+  tasks:
+    - name: print the datatypes
+      ansible.builtin.debug:
+        msg: "course is {{ COURSE }} Hours are {{ HOURS }} is it Live? {{ LIVE }} Details are {{ DETAILS }} Tools are {{ TOOLS }}"    
