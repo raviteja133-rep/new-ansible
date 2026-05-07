@@ -8,6 +8,6 @@
         state: installed
       
     - name: start and enable the nginx
-      ansible.builtin.debug:
-        state: started
-        enable: yes  
+      ansible.builtin.service:
+        state: restarted
+        enabled: yes  
