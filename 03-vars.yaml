@@ -3,8 +3,8 @@
   connection: local
   vars:
     PROJECT: QBE
-    ENVIROONMENT: DEV
+    ENVIRONMENT: DEV
 
   tasks:
     ansible.builtin.debug:
-      msg: "Project is {{ PROJECT }} Environment is {{ ENVIROONMENT }}"
+      msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"
