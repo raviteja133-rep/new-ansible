@@ -1,0 +1,14 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:
+    PROJECT: SABRE
+    ENVIRONMENT: TEST
+
+  tasks:
+    - name: printing the variables
+      vars:
+        PROJECT: EXE
+        ENVIRONMENT: QA
+    
+      msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"  
